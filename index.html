@@ -1,11 +1,12 @@
+<!doctype html>
 <html lang="vi">
- <head> 
+ <head>
   <script>
-  // Function to clear cache and reload
+
   function clearCacheAndReload() {
-    // Check if this is the first visit in this session
+
     if (!sessionStorage.getItem('cacheCleared')) {
-      // Clear browser cache programmatically (if supported)
+
       if (window.caches && window.caches.keys) {
         caches.keys().then(function(names) {
           for (let name of names) {
@@ -14,25 +15,19 @@
         });
       }
       
-      // Clear localStorage and sessionStorage if needed
-      // localStorage.clear();
-      // sessionStorage.clear();
-      
-      // Set a flag to prevent infinite reload loop
       sessionStorage.setItem('cacheCleared', 'true');
       
-      // Force reload the page
+
       setTimeout(function() {
-        window.location.reload(true); // true forces reload from server
+        window.location.reload(true);
       }, 100);
     }
   }
 
-  // Run on page load
+
   window.onload = function() {
     clearCacheAndReload();
     
-    // Your existing initialization code
     renderGameGrid();
     renderGameDetails();
     setTimeout(() => {
@@ -41,13 +36,13 @@
       setTimeout(() => popup.classList.add('show'), 10);
     }, 1000);
   };
-</script> 
-  <meta name="google-adsense-account" content="ca-pub-5837621758803699"> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"> 
-  <meta name="description" content="AresHax - Cung cấp hack game và key miễn phí cho Liên Quân, Free Fire, ZingSpeed và hơn thế nữa!"> 
-  <title>AresHax - Hack Game &amp; Key</title> 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"> 
+</script>
+  <meta name="google-adsense-account" content="ca-pub-5837621758803699">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="SHAWDO MOD - Cung cấp hack game và key miễn phí cho Liên Quân, Free Fire, ZingSpeed và hơn thế nữa!">
+  <title>SHAWDO MOD - Hack Game &amp; Key</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -131,17 +126,17 @@
       font-weight: 400;
     }
     
-    /* Game Grid */
+
     .game-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       margin-bottom: 32px;
     }
     
     @media (max-width: 640px) {
       .game-grid {
-        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
       }
     }
@@ -236,7 +231,7 @@
       color: var(--primary-light);
     }
     
-    /* Game Details */
+
     .game-details {
       display: none;
       opacity: 0;
@@ -347,7 +342,7 @@
       border-top: 1px solid var(--border);
     }
     
-    /* Links Section */
+
     .links-section {
       text-align: center;
       margin: 32px 0;
@@ -438,7 +433,7 @@
       }
     }
     
-    /* Popup */
+
     .popup-overlay {
       position: fixed;
       top: 0;
@@ -552,8 +547,8 @@
       }
     }
     
-    /* Scrollbar */
-    ::-webkit-scrollbar {
+
+    ::-wScrollbrollbar {
       width: 8px;
       height: 8px;
     }
@@ -571,13 +566,13 @@
       background: var(--primary);
     }
     
-    /* Loading state */
+
     .game-card.loading {
       pointer-events: none;
       opacity: 0.6;
     }
     
-    /* Smooth transitions */
+   
     @media (prefers-reduced-motion: reduce) {
       * {
         animation-duration: 0.01ms !important;
@@ -585,404 +580,112 @@
         transition-duration: 0.01ms !important;
       }
     }
-  </style> 
-  <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
-  <meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
-  <meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
-  <meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
-  <meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
- </head> 
- <body> 
-  <!-- Popup --> 
-  <div id="popup" class="popup-overlay"> 
-   <div class="popup-content"> 
-    <h2>🎉 Chào Mừng Đến Với AresHax</h2> 
-    <p> Chọn game bạn muốn hack để xem link tải và nhận key.<br><br> Key miễn phí sử dụng trong <b>3 ngày</b>. Sau đó, bạn có thể lấy key mới hoặc mua key liên hệ Admin.<br><br> Admin chuyên cung cấp key và acc giá rẻ (<b>dưới 10k</b>) với nhiều tùy chọn skin và rank.<br><br> Cảm ơn bạn đã ủng hộ! Chúc bạn chơi game vui vẻ!<br><br> — Admin <b>Huỳnh Duy Khang</b> ❤️ </p> 
-    <button onclick="closePopup()">Đã Hiểu</button> 
-   </div> 
-  </div> 
-  <div class="container"> 
-   <div class="header"> 
-    <h1>AresHax - Hack Game</h1> 
-    <p class="header-subtitle">Chọn game bạn muốn hack</p> 
-   </div> 
-   <!-- Game Grid --> 
-   <div class="game-grid" id="game-grid">
-    <div class="game-card" data-game-id="lqv2"> 
-     <img src="/assets/img/icons/game/lienquan.png" alt="Biểu tượng Hack Liên Quân Vip 1.62.1.4" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=Hack Liên Quân Vip 1.62.1.4'"> 
-     <span>Hack Liên Quân Vip 1.62.1.4</span> 
+  </style>
+ </head>
+ <body>
+  <div id="popup" class="popup-overlay">
+   <div class="popup-content">
+    <h2>🎉 Chào Mừng Đến Với SHAWDO MOD</h2>
+    <p>Chọn game bạn muốn hack để xem link tải và nhận key.
+     <br>
+     <br>
+     Key miễn phí sử dụng trong <b>3 hoăc 2 hoặc 1 ngày tùy game</b>. Sau đó, bạn có thể lấy key mới hoặc mua key tại shop.
+     <br>
+     <br>
+     Shop cung cấp key và acc giá rẻ (<b>key liên quân adr dưới 10k</b>) và SHOP AC MIỄN PHÍ.
+     <br>
+     <br>
+     Cảm ơn bạn đã ủng hộ! Chúc bạn chơi game vui vẻ!
+     <br>
+     <br>
+     — Admin <b>Nguyễn Thành Long</b> ❤️</p>
+    <button onclick="closePopup()">Đã Hiểu</button>
+   </div>
+  </div>
+  <div class="container">
+   <div class="header">
+    <h1>SHAWDO MOD - Hack Game</h1>
+    <p class="header-subtitle">Chọn game bạn muốn hack</p>
+   </div>
+   <div class="game-grid" id="game-grid"></div>
+   <div id="game-details"></div>
+   <div class="links-section">
+    <h2>🛒 Mua Key &amp; ACC</h2>
+    <div class="links-container">
+     <a href="https://shawdomod.top/buy.php" target="_blank">Mua Key Giá Rẻ</a> <a href="https://ramdommienphi.site" target="_blank">SHOP ACC MIỄN PHÍ</a>
     </div>
-    <div class="game-card" data-game-id="zingspeed"> 
-     <img src="/assets/img/icons/game/zingspeedmobile.png" alt="Biểu tượng ZingSpeed" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=ZingSpeed'"> 
-     <span>ZingSpeed</span> 
+   </div>
+   <div class="links-section">
+    <h2>⭐ Hướng Dẫn Lấy Key Miễn Phí</h2>
+    <div class="links-container">
+     <a href="https://www.youtube.com/shorts/6ysuqENg1zg?feature=share" target="_blank">Xem Chi Tiết</a>
     </div>
-    <div class="game-card" data-game-id="cfmvn"> 
-     <img src="/assets/img/icons/game/com.vnggames.cfl.crossfirelegends.png" alt="Biểu tượng HACK CFL ANDROID VIP" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=HACK CFL ANDROID VIP'"> 
-     <span>HACK CFL ANDROID VIP</span> 
+   </div>
+   <div class="links-section">
+    <h2>🌐 Cộng Đồng</h2>
+    <div class="links-container">
+     <a href="https://www.youtube.com/@shawdomod" target="_blank">YouTube</a> <a href="https://zalo.me/g/tuokpp354" target="_blank">Box Zalo 1</a> <a href="https://t.me/ShawDoModdd" target="_blank">TELEGAM</a> <a href="https://discord.gg/uRD7WTkKf" target="_blank">Discord</a>
     </div>
-    <div class="game-card" data-game-id="tocchien"> 
-     <img src="/assets/img/icons/game/com.riotgames.league.wildriftvn.png" alt="Biểu tượng Hack Map Tốc Chiến" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=Hack Map Tốc Chiến'"> 
-     <span>Hack Map Tốc Chiến</span> 
-    </div>
-    <div class="game-card" data-game-id="dnslq"> 
-     <img src="/assets/img/icons/game/chongkhoa.png" alt="Biểu tượng Chống Khóa Liên Quân DNS" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=Chống Khóa Liên Quân DNS'"> 
-     <span>Chống Khóa Liên Quân DNS</span> 
-    </div>
-    <div class="game-card" data-game-id="loaderaov"> 
-     <img src="/assets/img/icons/game/loaderaov.png" alt="Biểu tượng LOADER AOV" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=LOADER AOV'"> 
-     <span>LOADER AOV</span> 
-    </div>
-    <div class="game-card" data-game-id="mbll"> 
-     <img src="/assets/img/icons/game/mlbbvn.png" alt="Biểu tượng Mobile Legends Bang Bang" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=Mobile Legends Bang Bang'"> 
-     <span>Mobile Legends Bang Bang</span> 
-    </div>
-    <div class="game-card" data-game-id="bloodstrike"> 
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnfkkUPUFTyoTFt77Z0Bj64qfSBVMfJS5UTg&amp;s" alt="Biểu tượng BloodStrike" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=BloodStrike'"> 
-     <span>BloodStrike</span> 
-    </div>
-    <div class="game-card" data-game-id="pubgvng"> 
-     <img src="/assets/img/icons/game/com.vng.pubgmobile.png" alt="Biểu tượng PUBG MOBILE VNG" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=PUBG MOBILE VNG'"> 
-     <span>PUBG MOBILE VNG</span> 
-    </div>
-    <div class="game-card" data-game-id="fefe"> 
-     <img src="/assets/img/icons/game/freefire.png" alt="Biểu tượng Free Fire" loading="lazy" onerror="this.src='https://via.placeholder.com/80?text=Free Fire'"> 
-     <span>Free Fire</span> 
-    </div>
-   </div> 
-   <!-- Game Details --> 
-   <div id="game-details">
-    <div id="details-lqv2" class="game-details"> 
-     <h2>Hack Liên Quân Vip 1.62.1.4</h2> 
-     <p>Gỡ Liên Quân Trong Máy Trước Khi Cài !!!</p> 
-     <a href="https://www.mediafire.com/file/10aqxtcz71q9giw/LQ+MAP+1.62.1.4.apk/file" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-lqchapto" class="game-details"> 
-     <h2>Hack Liên Quân ESP Chấp Tố 1.62.1.4</h2> 
-     <p> Chơi Kĩ No Lâu Không Ban Vặt Nhưng Ăn Tố Nhiều Quá Cũng Ăn Cặc :))</p> 
-     <a href="https://www.mediafire.com/file/bg00xekordrn30n/ESP+MAX+VIP.apk/file" class="btn" target="_blank">APK Chấp Tố Ẩn Live</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-fcmobile" class="game-details"> 
-     <h2>Hack FC Mobile VN 27.0.07</h2> 
-     <p>Gỡ Liên Quân Trong Máy Trước Khi Cài !!!</p> 
-     <a href="https://www.mediafire.com/file/jq4cb8z5gq600mn/FC+27.0.07+HACK.apk/file" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-zingspeed" class="game-details"> 
-     <h2>🚗 ZingSpeed 1.54.0</h2> 
-     <p>Bản mới nhất 64BIT từ CH Play</p> 
-     <a href="https://bom.so/ZsmVipVCL" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-cfmvn" class="game-details"> 
-     <h2>HACK CFL ANDROID VIP</h2> 
-     <p>FIX LOGIN FB KHÔNG CẦN GỠ FB !!!</p> 
-     <a href="https://www.mediafire.com/file/ftj1y8ra02127bp/CF+FIX+LOGIN+FB.apk/file" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-tocchien" class="game-details"> 
-     <h2>Hack Map Tốc Chiến</h2> 
-     <p>ANTIBAND | HACK MAP | CAM XA</p> 
-     <a href="https://www.mediafire.com/file/ga2efoinre2eg34/Map+Tốc+Chiến_7.1.0.9849.apk/file" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-dnslq" class="game-details"> 
-     <h2>Chống Khoá Acc</h2> 
-     <p>Bypass VPN + Xóa Log LQMB</p> 
-     <a href="https://www.mediafire.com/file/rfy3qlymz7g61ba/BYPASS+DNS+LQ_2.334.apk/file" class="btn" target="_blank">Tải APK V1</a> 
-     <a href="https://www.mediafire.com/file/rfy3qlymz7g61ba/BYPASS+DNS+LQ_2.334.apk/file" class="btn" target="_blank">Tải APK V2 Bật Ở Sảnh Siêu Mạnh</a> 
-    </div>
-    <div id="details-loaderaov" class="game-details"> 
-     <h2>LOADER AOV</h2> 
-     <p>CHỈ HỖ TRỢ MÁY ROOT</p> 
-     <a href="https://www.mediafire.com/file/eiw2hl45bmybmg1/LOADER+AOV_V1.apk/file" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Key Liên Quân</a> 
-     <a href="https://youtu.be/vE69mrPImrU?si=PKHhwyPAGnTpiCaa" class="btn" target="_blank">Hướng Dẫn Dùng</a> 
-    </div>
-    <div id="details-mbll" class="game-details"> 
-     <h2>Hack Map Mobile Legends Bang Bang</h2> 
-     <p>ESP | HACK MAP | CAM XA</p> 
-     <a href="https://www.mediafire.com/file/8d6r96jzg2cp6rl/Hack+Map+MBLL+V1.apk/file" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-bloodstrike" class="game-details"> 
-     <h2>🔫 Blood Strike</h2> 
-     <p>Bản mới nhất 64BIT từ CH Play</p> 
-     <a href="https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-pubgvng" class="game-details"> 
-     <h2>🔫 PUBG MOBILE VNG</h2> 
-     <p>Bản mới nhất 64BIT từ CH Play</p> 
-     <a href="https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan" class="btn" target="_blank">Tải APK</a> 
-     <a href="https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan" class="btn" target="_blank">Nhận Key</a> 
-    </div>
-    <div id="details-fefe" class="game-details"> 
-     <h2>Hướng dẫn cài đặt</h2> 
-     <p>Xem kĩ làm từng bước tránh lỗi</p> 
-     <a href="https://youtu.be/QIcsKEwuVe8?si=IL1HLbDuUBPOtcR4" class="btn" target="_blank">Xem hướng dẫn</a> 
-     <a href="https://youtu.be/U6RcLFvj7Yo?si=Ue6RJ3DpoTX0pImu" class="btn" target="_blank">Hướng Dẫn Dán File Android Cao Nếu Lỗi</a> 
-     <hr> 
-     <h2>Tường Lửa Chống Khóa acc</h2> 
-     <p>Bật xong mới vào game tránh lỗi</p> 
-     <a href="https://www.mediafire.com/file/bs99tqjuk2fowcn/AntiBand+V2.apk/file" class="btn" target="_blank">Tường Lửa</a> 
-     <a href="https://youtu.be/zxtLtxJQ3i4?si=XLg211TnRfGulxc7" class="btn" target="_blank">Hướng Dẫn Dùng Tường Lửa</a> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-     <hr> 
-     <h2>Hack Free Fire</h2> 
-     <p>Bản Mới Nhất</p> 
-     <a href="https://transfer.it/t/r5Dou4h3zbAI" class="btn" target="_blank">Tải APK HACK</a> 
-     <hr> 
-     <h2>Lấy Key Hack Free Fire</h2> 
-     <p>Sao chép key vào hack dán</p> 
-     <a href="https://vip.vnhax.top/GETKEY/vipadmin" class="btn" target="_blank">Nhận Key</a> 
-     <hr> 
-     <h2>MT Manager</h2> 
-     <p>Xem kĩ video hướng dẫn</p> 
-     <a href="https://www.mediafire.com/file/ibdk3fu2r05xg46/MT+Manager_2.18.4.apk/file" class="btn" target="_blank">Tải APK</a> 
-    </div>
-   </div> 
-   <!-- Shop Links --> 
-   <div class="links-section"> 
-    <h2>🛒 Mua Key &amp; ACC</h2> 
-    <div class="links-container"> 
-     <a href="https://t.me/JunCisHaxHDK" target="_blank">Key Siêu Tốc</a> 
-    </div> 
-   </div> 
-   <!-- Guide Links --> 
-   <div class="links-section"> 
-    <h2>⭐ Hướng Dẫn Lấy Key Miễn Phí</h2> 
-    <div class="links-container"> 
-     <a href="https://www.youtube.com/shorts/6ysuqENg1zg?feature=share" target="_blank">Xem Chi Tiết</a> 
-    </div> 
-   </div> 
-   <!-- Community Links --> 
-   <div class="links-section"> 
-    <h2>🌐 Cộng Đồng</h2> 
-    <div class="links-container"> 
-     <a href="https://t.me/AresHaxGame" target="_blank">Box Telegram 1</a> 
-     <a href="https://t.me/JunCisHax" target="_blank">Box Telegram 2</a> 
-     <a href="https://zalo.me/g/sgqvxb444" target="_blank">Box Zalo </a> 
-    </div> 
-   </div> 
-  </div> 
+   </div>
+  </div>
   <script>
-    // Game data
+
+    const _0x3b1c = (idx) => {
+      const _0x1a2b = [
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x6c\x71\x4a\x64\x72\x39\x2e\x74\x78\x74', // 0: go.php?game=lqAdr9.txt
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x4c\x71\x69\x6f\x53\x38\x2e\x74\x78\x74', // 1: go.php?game=LqioS8.txt
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x46\x66\x6d\x69\x6e\x68\x4c\x2e\x74\x78\x74', // 2: go.php?game=FfminhL.txt
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x42\x67\x38\x4c\x2e\x74\x78\x74',         // 3: go.php?game=Bg8L.txt
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x33\x38\x38\x32\x6a\x66\x73\x38\x72\x2e\x74\x78\x74', // 4: go.php?game=3882jfs8r.txt
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x5a\x73\x44\x38\x2e\x74\x78\x74',         // 5: go.php?game=ZsD8.txt
+        '\x67\x6f\x2e\x70\x68\x70\x3f\x67\x61\x6d\x65\x3d\x4e\x62\x6c\x6c\x39\x2e\x74\x78\x74'          // 6: go.php?game=Mbll9.txt
+      ];
+      return _0x1a2b[idx];
+    };
+
+    // Khởi tạo danh sách Game - Link APK giữ nguyên gốc, Link lấy Key trỏ vào bộ giải mã HEX
     const games = [
-    
-    
-    
-    {
-        id: 'lqv2',
-        name: 'Hack Liên Quân Vip 1.62.1.4',
-        icon: '/assets/img/icons/game/lienquan.png',
+      {
+        id: 'lqadr',
+        name: 'Hack Liên Quân (android)',
+        icon: 'lienquan.png',
         sections: [
           {
-            title: 'Hack Liên Quân Vip 1.62.1.4',
+            title: 'Hack Liên Quân (android)',
             description: 'Gỡ Liên Quân Trong Máy Trước Khi Cài !!!',
             links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/10aqxtcz71q9giw/LQ+MAP+1.62.1.4.apk/file' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
+              { text: 'Tải APK', url: 'https://zufile.com/download/0rleDYdIvX' },
+              { text: 'Nhận Key', url: _0x3b1c(0) }
             ]
           }
         ]
       },
-      
-      
-      
       {
         id: 'lqchapto',
-        name: 'Hack Liên Quân ESP Chấp Tố 1.62.1.4',
-        icon: '/assets/img/icons/game/lienquan.png',
+        name: 'Hack Liên Quân ESP Chấp Tố (android)',
+        icon: 'lienquan.png',
         sections: [
           {
-            title: 'Hack Liên Quân ESP Chấp Tố 1.62.1.4',
+            title: 'Hack Liên Quân ESP Chấp Tố 1.62.1.4 (android )',
             description: ' Chơi Kĩ No Lâu Không Ban Vặt Nhưng Ăn Tố Nhiều Quá Cũng Ăn Cặc :))',
             links: [
-
-              
-                            { text: 'APK Chấp Tố Ẩn Live', url: 'https://www.mediafire.com/file/bg00xekordrn30n/ESP+MAX+VIP.apk/file' },
-              
-              
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
-            ]
-          }
-        ]
-      },
-      
-      
-
-
-
-
-
-    
-    
-        {
-        id: 'fcmobile',
-        name: 'Hack FC Mobile VN 27.0.07',
-        icon: '/assets/img/icons/game/com.garena.game.fcmobilevn.png',
-        sections: [
-          {
-            title: 'Hack FC Mobile VN 27.0.07',
-            description: 'Gỡ Liên Quân Trong Máy Trước Khi Cài !!!',
-            links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/jq4cb8z5gq600mn/FC+27.0.07+HACK.apk/file' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
-            ]
-          }
-        ]
-      },
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-          {
-        id: 'zingspeed',
-        name: 'ZingSpeed',
-        icon: '/assets/img/icons/game/zingspeedmobile.png',
-        sections: [
-          {
-            title: '🚗 ZingSpeed 1.54.0',
-            description: 'Bản mới nhất 64BIT từ CH Play',
-            links: [
-              { text: 'Tải APK', url: 'https://bom.so/ZsmVipVCL' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
-            ]
-          }
-        ]
-      },
-    
-          
-
-      
-      
-
-      
-      
-      
-            {
-        id: 'cfmvn',
-        name: 'HACK CFL ANDROID VIP',
-        icon: '/assets/img/icons/game/com.vnggames.cfl.crossfirelegends.png',
-        sections: [
-          {
-            title: 'HACK CFL ANDROID VIP',
-            description: 'FIX LOGIN FB KHÔNG CẦN GỠ FB !!!',
-            links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/ftj1y8ra02127bp/CF+FIX+LOGIN+FB.apk/file' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
-            ]
-          }
-        ]
-      },
-      
-      
-      {
-        id: 'tocchien',
-        name: 'Hack Map Tốc Chiến',
-        icon: '/assets/img/icons/game/com.riotgames.league.wildriftvn.png',
-        sections: [
-          {
-            title: 'Hack Map Tốc Chiến',
-            description: 'ANTIBAND | HACK MAP | CAM XA',
-            links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/ga2efoinre2eg34/Map+Tốc+Chiến_7.1.0.9849.apk/file' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
+              { text: 'APK Chấp Tố Ẩn Live', url: 'https://zufile.com/download/kNfS0PDHLQ' },
+              { text: 'Nhận Key', url: _0x3b1c(0) }
             ]
           }
         ]
       },
       {
-        id: 'dnslq',
-        name: 'Chống Khóa Liên Quân DNS',
-        icon: '/assets/img/icons/game/chongkhoa.png',
+        id: 'lqios',
+        name: 'Hack Liên Quân (iOS)',
+        icon: 'lienquan.png',
         sections: [
           {
-            title: 'Chống Khoá Acc',
-            description: 'Bypass VPN + Xóa Log LQMB',
+            title: 'Hack Liên Quân (iOS)',
+            description: 'HACK MAP IOS V10',
             links: [
-              { text: 'Tải APK V1', url: 'https://www.mediafire.com/file/rfy3qlymz7g61ba/BYPASS+DNS+LQ_2.334.apk/file' },
-              { text: 'Tải APK V2 Bật Ở Sảnh Siêu Mạnh', url: 'https://www.mediafire.com/file/rfy3qlymz7g61ba/BYPASS+DNS+LQ_2.334.apk/file' }
-            ]
-          }
-        ]
-      },
-      
-       
-      
-      {
-        id: 'loaderaov',
-        name: 'LOADER AOV',
-        icon: '/assets/img/icons/game/loaderaov.png',
-        sections: [
-          {
-            title: 'LOADER AOV',
-            description: 'CHỈ HỖ TRỢ MÁY ROOT',
-            links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/eiw2hl45bmybmg1/LOADER+AOV_V1.apk/file' },
-              { text: 'Key Liên Quân', url: 'https://vip.vnhax.top/GETKEY/vipadmin' },
-              { text: 'Hướng Dẫn Dùng', url: 'https://youtu.be/vE69mrPImrU?si=PKHhwyPAGnTpiCaa' }
-            ]
-          }
-        ]
-      },
-      
-      
-      
-      {
-        id: 'mbll',
-        name: 'Mobile Legends Bang Bang',
-        icon: '/assets/img/icons/game/mlbbvn.png',
-        sections: [
-          {
-            title: 'Hack Map Mobile Legends Bang Bang',
-            description: 'ESP | HACK MAP | CAM XA',
-            links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/8d6r96jzg2cp6rl/Hack+Map+MBLL+V1.apk/file' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
-            ]
-          }
-        ]
-      },
-      
-      
-      
-
-      {
-        id: 'bloodstrike',
-        name: 'BloodStrike',
-        icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnfkkUPUFTyoTFt77Z0Bj64qfSBVMfJS5UTg&s',
-        sections: [
-          {
-            title: '🔫 Blood Strike',
-            description: 'Bản mới nhất 64BIT từ CH Play',
-            links: [
-              { text: 'Tải APK', url: 'https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan' },
-              { text: 'Nhận Key', url: 'https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'pubgvng',
-        name: 'PUBG MOBILE VNG',
-        icon: '/assets/img/icons/game/com.vng.pubgmobile.png',
-        sections: [
-          {
-            title: '🔫 PUBG MOBILE VNG',
-            description: 'Bản mới nhất 64BIT từ CH Play',
-            links: [
-              { text: 'Tải APK', url: 'https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan' },
-              { text: 'Nhận Key', url: 'https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan' }
+              { text: 'Tải File Cài Đặt', url: 'https://i.authtool.app/ios/69097c24fda670145d7cde31' }, 
+              { text: 'Nhận Key', url: _0x3b1c(1) } 
             ]
           }
         ]
@@ -990,53 +693,85 @@
       {
         id: 'fefe',
         name: 'Free Fire',
-        icon: '/assets/img/icons/game/freefire.png',
+        icon: 'freefire.png',
         sections: [
-          {
-            title: 'Hướng dẫn cài đặt',
-            description: 'Xem kĩ làm từng bước tránh lỗi',
-            links: [
-              { text: 'Xem hướng dẫn', url: 'https://youtu.be/QIcsKEwuVe8?si=IL1HLbDuUBPOtcR4' },
-              { text: 'Hướng Dẫn Dán File Android Cao Nếu Lỗi', url: 'https://youtu.be/U6RcLFvj7Yo?si=Ue6RJ3DpoTX0pImu' }
-            ]
-          },
-          {
-            title: 'Tường Lửa Chống Khóa acc',
-            description: 'Bật xong mới vào game tránh lỗi',
-            links: [
-              { text: 'Tường Lửa', url: 'https://www.mediafire.com/file/bs99tqjuk2fowcn/AntiBand+V2.apk/file' },
-              { text: 'Hướng Dẫn Dùng Tường Lửa', url: 'https://youtu.be/zxtLtxJQ3i4?si=XLg211TnRfGulxc7' },
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
-            ]
-          },
           {
             title: 'Hack Free Fire',
             description: 'Bản Mới Nhất',
             links: [
-              { text: 'Tải APK HACK', url: 'https://transfer.it/t/r5Dou4h3zbAI' }
+              { text: 'TẢI HACK FF', url: 'https://transfer.it/t/r5Dou4h3zbAI' },
+              { text: 'TẢI APK FIX VĂNG', url: 'https://zufile.com/download/kNfS0PDHLQ' },
+              { text: 'GET KEY', url: _0x3b1c(2) }
             ]
-          },
+          }
+        ]
+      },
+      {
+        id: 'pubgvng',
+        name: 'PUBG MOBILE VNG',
+        icon: 'pubgmobile.png',
+        sections: [
           {
-            title: 'Lấy Key Hack Free Fire',
-            description: 'Sao chép key vào hack dán',
+            title: '🔫 PUBG MOBILE VNG',
+            description: 'Bản mới nhất 64BIT từ CH Play',
             links: [
-              { text: 'Nhận Key', url: 'https://vip.vnhax.top/GETKEY/vipadmin' }
+              { text: 'Tải APK', url: 'https://hmgteam.net/GETKEY/index.php?api=ngohuynhtuan' },
+              { text: 'Nhận Key', url: _0x3b1c(3) }
             ]
-          },
+          }
+        ]
+      },
+      {
+        id: 'fcmobile',
+        name: 'Hack FC Mobile 🇻🇳(android)',
+        icon: 'fcmobilevn.png',
+        sections: [
           {
-            title: 'MT Manager',
-            description: 'Xem kĩ video hướng dẫn',
+            title: 'Hack FC Mobile 🇻🇳 (android)',
+            description: 'Gỡ Liên Quân Trong Máy Trước Khi Cài !!!',
             links: [
-              { text: 'Tải APK', url: 'https://www.mediafire.com/file/ibdk3fu2r05xg46/MT+Manager_2.18.4.apk/file' }
+              { text: 'Tải APK', url: 'https://zufile.com/download/dPcIOHbOQw' },
+              { text: 'Nhận Key', url: _0x3b1c(4) }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'zingspeed',
+        name: 'ZingSpeed',
+        icon: 'zingspeedmobile.png',
+        sections: [
+          {
+            title: '🚗 ZingSpeed 1.52.0',
+            description: 'Bản mới nhất 64BIT từ CH Play',
+            links: [
+              { text: 'Tải APK', url: 'https://www.mediafire.com/file/hqldrpayt9cg49h/Hack+ZSM+1.52.0.x_sign.apk/file' },
+              {text: 'Nhận Key', url: _0x3b1c(5) }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'mbll',
+        name: 'Mobile Legends Bang Bang',
+        icon: 'mlbbvn.png',
+        sections: [
+          {
+            title: 'Hack Map Mobile Legends Bang Bang',
+            description: 'ESP | HACK MAP | CAM XA',
+            links: [
+              { text: 'Tải APK', url: 'https://www.mediafire.com/file/8d6r96jzg2cp6rl/Hack+Map+MBLL+V1.apk/file' },
+              { text: 'Nhận Key', url: _0x3b1c(6) }
             ]
           }
         ]
       }
     ];
 
-    // Render game grid
+   
     function renderGameGrid() {
       const grid = document.getElementById('game-grid');
+      grid.innerHTML = ''; 
       games.forEach((game) => {
         const card = document.createElement('div');
         card.className = 'game-card';
@@ -1050,9 +785,10 @@
       });
     }
 
-    // Render game details
+
     function renderGameDetails() {
       const detailsContainer = document.getElementById('game-details');
+      detailsContainer.innerHTML = ''; 
       games.forEach(game => {
         const detail = document.createElement('div');
         detail.id = `details-${game.id}`;
@@ -1073,34 +809,32 @@
       });
     }
 
-    // Toggle game details
+
     function toggleGame(gameId, card) {
       const current = document.getElementById(`details-${gameId}`);
       const isVisible = current.classList.contains('show');
 
-      // Hide all details
+
       document.querySelectorAll('.game-details').forEach(detail => {
         detail.classList.remove('show');
         detail.style.display = 'none';
       });
 
-      // Remove active class from all cards
       document.querySelectorAll('.game-card').forEach(c => c.classList.remove('active'));
 
-      // Show selected game
       if (!isVisible) {
         current.style.display = 'block';
         setTimeout(() => current.classList.add('show'), 10);
         card.classList.add('active');
         
-        // Smooth scroll to details
+
         setTimeout(() => {
           current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }, 100);
       }
     }
 
-    // Close popup
+   
     function closePopup() {
       const popup = document.getElementById('popup');
       popup.classList.remove('show');
@@ -1109,28 +843,12 @@
       }, 300);
     }
 
-    // Initialize
-    window.onload = function () {
-      renderGameGrid();
-      renderGameDetails();
-      setTimeout(() => {
-        const popup = document.getElementById('popup');
-        popup.style.display = 'flex';
-        setTimeout(() => popup.classList.add('show'), 10);
-      }, 1000);
-    };
-    
-    // Close popup when clicking outside
+   
     document.getElementById('popup').addEventListener('click', function(e) {
       if (e.target === this) {
         closePopup();
       }
     });
-  </script> 
-  <ins class="adsbygoogle adsbygoogle-noablate" data-ad-hi="true" data-adsbygoogle-status="done" style="display: none !important;">
-   <div id="aswift_0_host" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
-    <iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5837621758803699&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1781410031&amp;plat=3%3A2162688%2C4%3A2162688%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fvip.vnhax.top%2F&amp;pra=5&amp;asro=0&amp;aimartd=4&amp;aieuf=1&amp;aicrs=1&amp;uach=WyJBbmRyb2lkIiwiMTIuMC4wIiwiIiwiVjIwMjkiLCIxNDkuMC43ODI3LjkxIixudWxsLDEsbnVsbCwiIixbWyJBbmRyb2lkIFdlYlZpZXciLCIxNDkuMC43ODI3LjkxIl0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuOTEiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&amp;dt=1781796031845&amp;bpp=4&amp;bdt=73&amp;idt=69&amp;shv=r20260612&amp;mjsv=m202606150101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie_enabled=1&amp;eoidce=1&amp;nras=1&amp;correlator=2704003872182&amp;frm=20&amp;pv=2&amp;u_tz=420&amp;u_his=5&amp;u_h=800&amp;u_w=360&amp;u_ah=800&amp;u_aw=360&amp;u_cd=24&amp;u_sd=2&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=360&amp;bih=643&amp;scr_x=0&amp;scr_y=0&amp;eid=42533293%2C95340253%2C95340255&amp;oid=2&amp;pvsid=5971089237311107&amp;tmod=453169476&amp;uas=0&amp;nvt=7&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C360%2C0%2C360%2C643%2C360%2C643&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=146" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe>
-   </div></ins>
-  <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20260612/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe>
+  </script>
  </body>
 </html>
